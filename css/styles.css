@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap');
+body, html, main, section, .content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #030003;
+    font-family: 'Cascadia Mono', monospace;
+    color: #484848;
+}
+
+h3{
+    text-align: left;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 4%;
+    height: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 12.5%;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 3vw;   
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin-left: 4%;
+}
+
+section {
+    position: relative;
+    width: 33.33%;
+    overflow: hidden; 
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.content img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+section button {
+    background: none;
+    border: none;
+    order: 1;
+    z-index: 0;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    align-self: flex-end;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+section h2 {
+    font-weight: 400;
+    font-size: large;
+    order: 2;
+    margin-top: 5rem;
+    margin-right: 0.3rem;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%; 
+    background-image: url("edge-gradient.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none; 
+    z-index: 100;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 6vw; 
+    margin-top: 12vh;
+    width: 88%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow-y: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.flex-container::-webkit-scrollbar{
+    display: none;
+    width: 0 !important
+}
+.flex-item {
+    width: 60%;
+    height: 50vw;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    pointer-events: none; 
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.flex-item img {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: auto;
+    filter: brightness(60%) contrast(90%);
+}
+
+#about .flex-item img {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: auto;
+    filter: brightness(60%) contrast(100%);
+}
+
+.flex-item h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 0%;
+}
+
+.flex-item p{
+    text-align: left;
+    font-weight: 400;
+    font-size: medium;
+    margin-top: 0%;
+}
+
+#portfolio .flex-container{
+    margin-left: 4vw; 
+}
+
+hr{
+    border-color: #555;
+    margin-bottom: 6%;
+}
+
+.hidden {
+    opacity: 0;
+    width: 0%;
+}
+
+.content button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: brightness(100%);
+    scale: 1;
+    transition: all 0.1s ease; 
+}
+
+.content button:hover{
+    filter: brightness(130%);
+    scale: 1.05;
+    transition: all 0.1s ease;
+}
+
+.clickable{
+    filter: brightness(100%);
+    scale: 1;
+    transition: all 0.1s ease; 
+}
+
+.clickable:hover{
+    filter: brightness(130%);
+    scale: 1.05;
+    transition: all 0.1s ease;
+}
+
+iframe{
+    float: left;
+    width: 100%;
+    height: 17%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: auto;
+    transition: all 0.1s ease; 
+    pointer-events: all;
+    border: none;
+    filter: brightness(60%) contrast(90%);
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 98; 
+    display: none;
+}
+
+#gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#FF2819, #4E08A9);
+    mix-blend-mode: color;
+    pointer-events: none;
+    z-index: 200;
+    transition: all 0.3s ease-in-out;
+}
+
+.expanded#portfolio .flex-container{
+    overflow-y: scroll;
+    margin-left: 6vw;
+}
+
+.expanded .flex-item{
+    height: 85vw;
+}
+
+.expanded iframe{
+    height: 25%;
+}
+
+#projects img.clickable {
+    filter: brightness(40%) contrast(95%);
+    width: 15vw;
+    height: auto;
+    transition: all 0.1s ease-in-out;
+    pointer-events: all;
+}
+
+#projects img.clickable::hover {
+    filter: brightness(100%);
+    width: 15.2vw;
+    height: auto;
+    transition: all 0.1s ease-in-out;
+}
+
