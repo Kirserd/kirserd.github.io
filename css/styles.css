@@ -10,6 +10,7 @@ body, html, main, section, .content {
 
 h3{
     text-align: left;
+    font-size: 2vh;
 }
 
 nav {
@@ -90,7 +91,7 @@ section button {
 
 section h2 {
     font-weight: 400;
-    font-size: large;
+    font-size: 2vh;
     order: 2;
     margin-top: 5rem;
     margin-right: 0.3rem;
@@ -167,19 +168,23 @@ section::after {
 .flex-item h2 {
     text-align: left;
     font-weight: 600;
-    font-size: 1.3vw;
+    font-size: 2.5vh;
     margin-top: 0%;
 }
 
 .flex-item p{
     text-align: left;
     font-weight: 400;
-    font-size: medium;
+    font-size: 1.7vh;
     margin-top: 0%;
 }
 
 #portfolio .flex-container{
     margin-left: 4vw; 
+}
+
+#projects .flex-container{
+    margin-left: 5.2vw; 
 }
 
 hr{
@@ -223,7 +228,7 @@ hr{
 iframe{
     float: left;
     width: 100%;
-    height: 17%;
+    height: 10vw;
     margin-bottom: 10px;
     position: relative;
     z-index: auto;
@@ -268,7 +273,7 @@ iframe{
 }
 
 .expanded iframe{
-    height: 25%;
+    height: 20vw;
 }
 
 #projects img.clickable {
