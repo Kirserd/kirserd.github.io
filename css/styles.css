@@ -13,6 +13,24 @@ h3{
     font-size: 2vh;
 }
 
+section#portfolio a h4{
+    text-align: left;
+    font-size: 2vh;
+    margin-left: 4vw;
+}
+
+section#portfolio a h5{
+    text-align: right;
+    margin-top: -4.8vh;
+    font-size: 2vh;
+    margin-right: 4vw;
+}
+
+section#portfolio a h6{
+    text-align: center;
+    font-size: 2vh;
+}
+
 nav {
     position: fixed;
     left: 0;
@@ -225,6 +243,10 @@ hr{
     transition: all 0.1s ease;
 }
 
+a {
+    pointer-events: all;
+}
+
 iframe{
     float: left;
     width: 100%;
@@ -269,11 +291,19 @@ iframe{
 }
 
 .expanded .flex-item{
-    height: 85vw;
+    height: 210%;
 }
 
 .expanded iframe{
     height: 20vw;
+}
+
+.expanded#portfolio .flex-container .flex-item img.invisible{
+    visibility: visible;
+}
+
+#portfolio .flex-container .flex-item img.invisible{
+    visibility: collapse;
 }
 
 #projects img.clickable {
