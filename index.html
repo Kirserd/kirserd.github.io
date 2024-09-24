@@ -1,267 +1,567 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.Denysevych</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <nav id="social-nav">
-        <ul>
-            <li><a target="_blank" href="https://www.linkedin.com/in/kiril-denisevich-090850179/"><img src="imgs/linkedin-icon.png" alt="LinkedIn" class="social-icon clickable"></a></li>
-            <li><a target="_blank" href="https://github.com/Kirserd"><img src="imgs/github-icon.png" alt="GitHub" class="social-icon clickable"></a></li>
-            <li><a target="_blank" href="https://gamejolt.com/@KirserdBacon"><img src="imgs/gamejolt-icon.png" alt="GameJolt" class="social-icon clickable"></a></li>
-            <li><a target="_blank" href="https://kirserdbacon.itch.io"><img src="imgs/itch-icon.png" alt="ItchIo" class="social-icon clickable"></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/@Kirserd"><img src="imgs/youtube-icon.png" alt="YouTube" class="social-icon clickable"></a></li>
-        </ul>
-    </nav>
-    <main id="gradient">
-        <section id="about">
-            <div class="content">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <img src="imgs/portrait.png"></img>
-                        <h2>Introduction</h2><hr>
-                        <p> I'm Kyrylo Denysevych, your all-rounder game developer! With proficiency in Engineering, UX & Graphic Design, 3D and 2D art, plus a touch of music composition and sound design, I truly embody a Full-stack game developer. <br>From JRPG, RPG, MMORPG, to FPS and captivating Roguelike games, my genre preferences are as diverse as my skillset. Welcome to my world of gaming!</p>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo" alt="logo">
+        <div id="logo-container">
+          <h3 id="logo-icon">K <br />D</h3>
+          <h3 id="logo-text">
+            yrylo <br />
+            enysevych
+          </h3>
+        </div>
+      </div>
+      <div id="navbar" alt="navbar">
+        <a href="#about-me">
+          <button>
+            <p><span class="navbar-li-sign">⚶</span> About Me</p>
+          </button>
+        </a>
+        <a href="#portfolio">
+          <button>
+            <p><span class="navbar-li-sign">⚶</span> Portfolio</p>
+          </button>
+        </a>
+        <a href="#resume">
+          <button>
+            <p><span class="navbar-li-sign">⚶</span> Resume</p>
+          </button>
+        </a>
+        <a href="#contact-me">
+          <button>
+            <p><span class="navbar-li-sign">⚶</span> Contact Me</p>
+          </button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section id="hero" alt="hero">
+        <div class="left">
+          <h1 id="hero-title" alt="name">
+            <span id="firstname">Kyrylo</span> Denysevych
+          </h1>
+          <h4 id="hero-sub-title" alt="specialty">Full-stack Web Developer</h4>
+        </div>
+        <div class="right">
+          <div id="hero-figure-primary"></div>
+          <div id="hero-figure-secondary"></div>
+        </div>
+      </section>
+      <hr />
+      <section id="about-me">
+        <div class="grid-container">
+          <div style="grid-area: head">
+            <h2>About Me</h2>
+          </div>
+          <div style="grid-area: a">
+            <h4>Introduction</h4>
+            <p>
+              I’m Kyrylo Denysevych, a full-stack web developer passionate about
+              bringing ideas to life through code. With expertise in HTML, CSS,
+              JavaScript, and modern frameworks like React and Node.js, I love
+              creating engaging, user-friendly applications. I’m also exploring
+              blockchain and Web3, expanding my toolkit to shape the future of
+              the web.
+            </p>
+          </div>
+          <div style="grid-area: b">
+            <h4>Approach</h4>
+            <p>
+              I believe in building intuitive, responsive applications with
+              clean, maintainable code. My goal is to create experiences that
+              are as enjoyable to use as they are to develop. Whether it’s a
+              dynamic website or a complex blockchain project, I’m committed to
+              delivering high-quality solutions with a user-first mindset.
+            </p>
+          </div>
+          <div style="grid-area: c">
+            <h4>Career Goals</h4>
+            <p>
+              I aim to work on impactful projects where I can continue growing
+              as a developer and contribute to innovative digital solutions. I’m
+              excited to be part of a forward-thinking team that values
+              creativity, technology, and making a positive impact through web
+              development.
+            </p>
+          </div>
+          <div style="grid-area: foot">
+            <hr />
+            <h4>Personality</h4>
+            <p>
+              Curious and driven, I thrive on solving complex problems and
+              embracing new challenges. I value collaboration and open
+              communication, and I’m always eager to learn from others while
+              sharing my own knowledge.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="portfolio">
+        <div class="grid-container">
+          <div style="grid-area: head">
+            <h2>Portfolio</h2>
+          </div>
+          <div style="grid-area: foot">
+            <div
+              id="portfolio-carousel"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="false"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#portfolio-carousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+                <li data-target="#portfolio-carousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/shaders.gif"
+                    alt="melancholy of marshmallow"
+                  />
+                  <div class="grid-container">
+                    <div class="portfolio-grid-head">
+                      <h4>Melancholy of Marshmallow</h4>
+                      <a
+                        href="https://gamejolt.com/games/MoM/511105"
+                        target="_blank"
+                      >
+                        <button class="section-btn-main">
+                          <p>Explore</p>
+                        </button>
+                      </a>
                     </div>
-                    <div class="flex-item hidden">
-                        <img src="imgs/portrait2.png"></img>
-                        <h2>Development Approach</h2><hr>
-                        <p>Step into my world as an agile, forward-thinking game developer! I continually push boundaries, exploring pioneering game mechanics and combinations. Conventionality doesn't confine me - I apply this ethos to every facet of game design, architecture, and execution. Embark on a journey where exploration and innovation rule!</p>
+                    <div style="grid-area: a">
+                      <p>
+                        Melancholy of Marshmallow is an immersive game where
+                        players, as otherworldly entities, manipulate a
+                        marshmallow vessel to influence a diverse, conflicting
+                        world. The gameplay revolves around the struggle between
+                        preserving this world or aiding an extraspace creature
+                        in erasing it, with the quest for truth guiding the
+                        difficult decisions.
+                      </p>
                     </div>
-                    <div class="flex-item hidden">
-                        <img src="imgs/portrait3.png"></img>
-                        <h2>Personal Attributes</h2><hr>
-                        <p>Despite ambitious aspirations, I stand firm and grounded. I bring resilience, stress-resilience, and collaborative skills to the table. Yet, my innate leadership inclination and deep project engagement often lead me to guide. It's not merely about following, but also about directing and shaping visions.</p>
+                    <div style="grid-area: b">
+                      <h5>Full description</h5>
+                      <hr />
+                      <p>
+                        RE:Melancholy is a unique game featuring an array of
+                        characters, including yourself, the player. Your role
+                        diverges greatly from the others, as you exist outside
+                        this world, interacting with it only through a
+                        marshmallow avatar granted to you. This unexpected
+                        intrusion disrupts the marshmallow's life, inciting
+                        various conflicts that impact both its existence and the
+                        broader world. The game thrusts you into a recurring,
+                        enduring quest to shield this world from an extraspatial
+                        entity that seeks to erase its memory. Alternatively,
+                        you could join this entity in thwarting the efforts of
+                        another being striving to maintain the world's
+                        existence. Despite this seeming clarity, the decision is
+                        far from straightforward. To make an informed choice,
+                        you must uncover the realities of this paradoxical
+                        world.
+                      </p>
                     </div>
-                    <div class="flex-item hidden">
-                        <img src="imgs/portrait4.png"></img>
-                        <h2>Career Goals</h2><hr>
-                        <p>Collaboration exhilarates me, but a personal dream fuels my journey - to build and cultivate my own game development enterprise. A seed planted in my young heart, this aspiration remains steadfast. My vision? A creative bastion producing one gaming marvel after another. Embrace my passion, and let's build a new world together.</p>
+                    <div style="grid-area: c">
+                      <h5>Setting</h5>
+                      <hr />
+                      <p>
+                        The game immerses you in a beautifully crafted world
+                        where varying visuals merge effortlessly, bringing to
+                        life an impressive universe through Vaaston, the local
+                        magic, and unique character viewpoints. Starting in a
+                        late-medieval fantasy backdrop, the game then evolves,
+                        blossoming into a magical-industrial epoch,
+                        interspersing steampunk and sci-fi elements into its
+                        unfolding narrative, thereby enriching its mystery and
+                        depth.
+                      </p>
                     </div>
+                    <div style="grid-area: d">
+                      <h5>About Vaaston</h5>
+                      <hr style="margin-bottom: 1rem; margin-top: 1rem" />
+                      <p>
+                        Vaaston is a potent, transformative, and infinite
+                        primordial energy pervading the universe, fueling its
+                        eternal recurrence, known as the Great Cycle. This
+                        unstable force can unpredictably interact with matter or
+                        antimatter in four ways: passing through without effect,
+                        pushing off, annihilating the object and itself, or
+                        unifying with it. The rarest and most potent is the
+                        unification, where Vaaston's infinite potential energy
+                        is converted into three times more matter. This
+                        unification process culminates in the formation of a
+                        Chronosphere, a sphere where time aligns with its own.
+                        Here, the growth of the unification point halts, and the
+                        fusion of past matter with future Vaaston occasionally
+                        gives rise to different matter types and, more rarely,
+                        living organisms. Through the infinite iterations of the
+                        Great Cycle, various life forms, including humans,
+                        elves, dwarfs, and fairies, have emerged, all powered by
+                        the cosmic dynamism of Vaaston.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h2>About</h2>
-                <img src="imgs/about-block-base.png" alt="About" class="block-image">
-                <button><img src="imgs/arrow.png" alt="expand" class="arrow"></button>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="content">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <div>
-                            <img src="imgs/portfolio/3d-1.png" class="hoverable"></img>
-                            <h2>De-11Vol-1a</h2>
-                        </div>
-                        <div>
-                            <img src="imgs/portfolio/shaders.gif" class="hoverable"></img>
-                            <h2>Rain shader (Screen&World)</h2>
-                        </div>
-                        <div>
-                            <iframe src="https://www.youtube.com/embed/k1hIJd2HHTQ"></iframe>
-                            <h2>Defunct world's solitude (OST)</h2>
-                        </div>
-                        <div>
-                            <img src="imgs/portfolio/ray-tracing.png" class="hoverable invisible"></img>
-                            <h2>Ray Tracing Studies</h2>
-                        </div>
-                        <div>
-                            <img src="imgs/portfolio/pixel-art-renderer.png" class="hoverable invisible"></img>
-                            <h2>3D Pixel Art Renderer</h2>
-                        </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/prev-website.png"
+                    alt="previous website"
+                  />
+                  <div class="grid-container">
+                    <div class="portfolio-grid-head">
+                      <h4>Previous Website</h4>
+                      <a href="https://kyrylodenysevych.com/deprecated-website/" target="_blank">
+                        <button class="section-btn-main">
+                          <p>Explore</p>
+                        </button>
+                      </a>
                     </div>
-                    <div class="flex-item hidden" id="descriptions">
-                        <p>| hover your mouse over the examples to inspect them |</p><br>
-                        <h2>Diving Into My 2D & 3D Artistry</h2>
-                        <p>Throughout my game development journey, I've ventured into diverse 2D and 3D art styles. For instance, behold the final render of my creation, the De-11Vol-1a - a cyberpunk-themed katana with an intriguing hacker module on the hilt. <br> This and other fantastic creations will soon be showcased on Sketchfab for your viewing pleasure.
-                            <br><br>While we wait, here's a quick glimpse into the graphic genres I've delved into: 
-                            <br><br>• 3D Hardsurface & Organic Environment Design
-                            <br>• 3D Cell-Shaded Toon/Anime Character Creation
-                            <br>• 2D Pixel Art, 16bit/32bit, Ranging from 16x16 to 128x128
-                            <br>• 2D Anime Character Artistry
-                        </p><hr>
-                        <h2>Delving into My Programming Proficiencies</h2>
-                        <p>As a Unity C# maestro, I stand tall. However, my prowess also extends to Python, C++, HTML, CSS, Javascript, and even some PHP. <br>Reflecting on my coding skills, it's safe to claim excellence in:
-                            <br><br>• OOP Architecture Design
-                            <br>• Creation of Flexible Systems
-                            <br>• Optimization of Database Management Systems
-                            <br>• Post-Processing Shader Implementation
-                            <br>• Compute Shader Development
-                            <br>• Multi-Thread Systems Design
-                        </p><hr>
-                        <h2>Exploring My Musical Journey</h2>
-                        <p>Two glorious years of immersing in music, honing my skills on the piano and guitar, have shaped me. In composing music, I specialize in crafting intimate fantasy themes as well as versatile backing order compositions (quiet/normal/dynamic).
-                            <br><br>The sample to the left represents a normal variant of the adaptive background crafted for a location in the RE:Melancholy project. 
-                        </p><hr>
-                        <br><br><br>
-                        <h2>Latest projects:</h2><hr>
-                        <h3>•  Distributed Interface of Local Data Orchestration</h3>
-                        <p>Is a local networking module, packed in a Dynamic Library (.dll) that provides you with easy-to-use connection & communication solution.
-                        <br><br>Currently it is compatible with everything as a "Raw" version, and "Extras" version for Unity Engine. Versions switch based on the environment they are used in.</p>
-                        <a target="_blank" alt="Go to GitHub Page" href="https://github.com/DubleXin/Distributed-Interface-of-Local-Data-Orchestration/">
-                            <h4>[ GitHub Page ]</h4></a>
-                        <a target="_blank" alt="Go to GitHub Releases" href="https://github.com/DubleXin/Distributed-Interface-of-Local-Data-Orchestration/releases/">
-                            <h5>[ Latest Release ]</h5></a>
-                        <br>
-                        <h3>•  Ray-Tracing Studies</h3>
-                        <p>My attempts into ray-tracing, optimisation techniques, faking techniques from path-tracing.
-                        <br><br>The whole studies were conducted using UnityEngine and various research materials.</p>
-                        <a target="_blank" alt="Go to GitHub Page" href="https://github.com/Kirserd/Saxion-CMGT-PP3-Ray-Tracing">
-                            <h4>[ GitHub Page ]</h4></a>
-                        <br>
-                        <h3>•  3D Pixel Art Renderer</h3>
-                        <p>My attempts into recreating infamous tessel8tor's 3d pixel art renderer.
-                        <br><br>The whole studies were conducted using UnityEngine and various research materials.</p>
-                        <a target="_blank" alt="Go to GitHub Page" href="https://github.com/Kirserd/Saxion-CMGT-PP4-3D-Pixel-Art-Renderer">
-                            <h4>[ GitHub Page ]</h4></a>
+                    <div style="grid-area: a">
+                      <p>
+                        This project highlights my skills in web development and
+                        design, focusing on clean aesthetics and user-friendly
+                        functionality. It features modern design elements and an
+                        intuitive interface, demonstrating my ability to create
+                        effective and engaging digital experiences. Click
+                        'Explore' to view the full project.
+                      </p>
                     </div>
+                  </div>
                 </div>
-                <img src="imgs/portfolio-block-base.png" alt="Portfolio">
-                <button><img src="imgs/arrow.png" alt="expand" class="arrow"></button>
-                <h2>Portfolio</h2>
-            </div>
-        </section>
-        <section id="projects">
-            <div class="content">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <img src="imgs/portfolio/MoM.gif" class="hoverable"></img>
-                        <h2>RE:Melancholy</h2><hr>
-                        <p>RE:Melancholy is an immersive game where players, as otherworldly entities, manipulate a marshmallow vessel to influence a diverse, conflicting world. The gameplay revolves around the struggle between preserving this world or aiding an extraspace creature in erasing it, with the quest for truth guiding the difficult decisions.</p>
-                        <h3>Genres:</h3>
-                        <p>•.JRPG •.Looter-shooter <br> •.Open-world •.Adventure <br>•.Metroidvania •.Simulator <br>•.Dungeon-crawler •.VN</p>
-                        <a target="_blank"  href="https://gamejolt.com/games/MoM/511105"><img src="imgs/gamejolt-button.png" class="clickable"></img></a>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/pixel-art-renderer.png"
+                    alt="pixel art renderer"
+                  />
+                  <div class="grid-container">
+                    <div class="portfolio-grid-head">
+                      <h4>Pixel-Art-Renderer in Unity URP</h4>
+                      <a
+                        href="https://github.com/Kirserd/Saxion-CMGT-PP4-3D-Pixel-Art-Renderer"
+                        target="_blank"
+                      >
+                        <button class="section-btn-main">
+                          <p>Explore</p>
+                        </button>
+                      </a>
                     </div>
-                    <div class="flex-item hidden">
-                        <h2>Full description</h2><hr>
-                        <p>
-                            RE:Melancholy is a unique game featuring an array of characters, including yourself, the player. Your role diverges greatly from the others, as you exist outside this world, interacting with it only through a marshmallow avatar granted to you. This unexpected intrusion disrupts the marshmallow's life, inciting various conflicts that impact both its existence and the broader world.
-                            The game thrusts you into a recurring, enduring quest to shield this world from an extraspatial entity that seeks to erase its memory. Alternatively, you could join this entity in thwarting the efforts of another being striving to maintain the world's existence. Despite this seeming clarity, the decision is far from straightforward. To make an informed choice, you must uncover the realities of this paradoxical world.
-                        </p>
-                        <h2>Setting</h2><hr>
-                        <p>
-                            The game immerses you in a beautifully crafted world where varying visuals merge effortlessly, bringing to life an impressive universe through Vaaston, the local magic, and unique character viewpoints.
-                            <br><br>
-                            Starting in a late-medieval fantasy backdrop, the game then evolves, blossoming into a magical-industrial epoch, interspersing steampunk and sci-fi elements into its unfolding narrative, thereby enriching its mystery and depth.
-                        </p>
+                    <div style="grid-area: a">
+                      <p>
+                        This project showcases my programming and artistic
+                        skills in creating a pixel art style using Unity's
+                        Universal Render Pipeline (URP). The focus was on
+                        replicating the aesthetics of pixel art through
+                        real-time shading and post-processing techniques applied
+                        to 3D models. Additional visual effects were
+                        incorporated to enhance the overall style, providing a
+                        unique blend of traditional pixel art with modern
+                        rendering capabilities. This work exemplifies the
+                        intersection of technical expertise and artistic vision.
+                      </p>
                     </div>
-                    <div class="flex-item hidden">
-                        <img src="imgs/portfolio/MoM-old.jpg" class="hoverable"></img>
-                        <h2>About Vaaston</h2><hr>
-                        <p>Vaaston is a potent, transformative, and infinite primordial energy pervading the universe, fueling its eternal recurrence, known as the Great Cycle. This unstable force can unpredictably interact with matter or antimatter in four ways: passing through without effect, pushing off, annihilating the object and itself, or unifying with it. The rarest and most potent is the unification, where Vaaston's infinite potential energy is converted into three times more matter.
-                            <br><br>
-                            This unification process culminates in the formation of a Chronosphere, a sphere where time aligns with its own. Here, the growth of the unification point halts, and the fusion of past matter with future Vaaston occasionally gives rise to different matter types and, more rarely, living organisms. Through the infinite iterations of the Great Cycle, various life forms, including humans, elves, dwarfs, and fairies, have emerged, all powered by the cosmic dynamism of Vaaston.</p>
-                    </div>
+                  </div>
                 </div>
-                <img src="imgs/projects-block-base.png" alt="Projects">
-                <button><img src="imgs/arrow.png" alt="expand" class="arrow"></button>
-                <h2>Projects</h2>
+                <div class="carousel-item">
+                  <img src="assets/images/ray-tracing.png" alt="ray tracing" />
+                  <div class="grid-container">
+                    <div class="portfolio-grid-head">
+                      <h4>Ray-Tracing in Unity SRP</h4>
+                      <a
+                        href="https://github.com/Kirserd/Saxion-CMGT-PP3-Ray-Tracing"
+                        target="_blank"
+                      >
+                        <button class="section-btn-main">
+                          <p>Explore</p>
+                        </button>
+                      </a>
+                    </div>
+                    <div style="grid-area: a">
+                      <p>
+                        This project demonstrates my capability to implement
+                        advanced rendering techniques using Unity's Scriptable
+                        Render Pipeline (SRP). It focuses on leveraging
+                        real-time ray tracing to achieve accurate reflections,
+                        refractions, and global illumination effects, providing
+                        a high level of visual realism. The implementation
+                        highlights my proficiency in working with cutting-edge
+                        graphics technology and creating visually compelling
+                        experiences. This work is a testament to my technical
+                        expertise in achieving sophisticated rendering results
+                        within a game engine.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#portfolio-carousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#portfolio-carousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="resume">
+        <div class="grid-container">
+          <div style="grid-area: head">
+            <h2>Resume</h2>
+          </div>
+          <div style="grid-area: a">
+            <h4>Education</h4>
+            <hr />
+            <ul>
+              <li class="label-time-set"><p>
+                <b>Communal institution "Secondary school of I-III degrees No. 22
+                  of Vinnytsia City Council"</b> <br /> 
+                (2011-2028, Vinnytsia, Ukraine)
+              </p></li>
+              <li class="label-time-set"><p><b>Podilsky Science-Technical Lyceum</b> <br />
+                (2018-2022, Vinnytsia, Ukraine)
+              </p></li>
+              <li class="label-time-set"><p><b>Saxion University of Applied Sciences, Creative Media and Game Technologies</b>
+                <br />
+                (2022-2026, Enschede, Netherlands)
+              </p></li>
+            </ul>
+            <br/>
+          </div>
+          <div style="grid-area: b">
+            <h4>Work experience</h4>
+            <hr />
+            <ul>
+              <li><p>none</li>
+            </ul>
+            <br/>
+          </div>
+          <div style="grid-area: c-head">
+            <h4>Skills</h4>
+            <hr />
+          </div>
+          <div style="grid-area: c-one">
+            <div class="skill-set">
+              <p><span>Programming Languages</p>
+              <ul>
+                <li><p><b>Java</b></p></li>
+                <li><p><b>C#</b></p></li>
+                <li><p><b>C++/C</b></p></li>
+                <li><p><b>GLSL/HLSL</b><br />(for shader programming)</p></li>
+              </ul>
+            </div>
+            
+            <div class="skill-set">
+              <p><span>Frontend Development</p>
+              <ul>
+                <li><p><b>HTML5</b></p></li>
+                <li><p><b>CSS3</b></p></li>
+                <li><p><b>JavaScript ES6</b></p></li>
+                <li><p><b>React.js</b></p></li>
+                <li><p><b>EJS</b><br />(Embedded JavaScript for templating)</p></li>
+              </ul>
+            </div>
+
+          </div>
+          <div style="grid-area: c-two">
+            
+            <div class="skill-set">
+              <p><span>Backend Development</span></p>
+              <ul>
+                <li><p><b>Node.js</b></p></li>
+                <li><p><b>Express.js</b></p></li>
+                <li><p><b>Dot NET</b></p></li>
+                <li><p><b>REST API</b></p></li>
+                <li><p><b>OAuth 2.0</b></p></li>
+              </ul>
+            </div>
+
+            <div class="skill-set">
+              <p><span>Database Management</p>
+              <ul>
+                <li><p><b>SQL</b></p></li>
+                <li><p><b>Postgres</b></p></li>
+              </ul>
+            </div>
+
+          </div>
+          <div style="grid-area: c-three">
+
+            <div class="skill-set">
+              <p><span>Blockchain & Web3 Development</p>
+              <ul>
+                <li><p><b>Web3 / Blockchain Development</b></p></li>
+                <li><p><b>DApp Development</b></p></li>
+                <li><p><b>Crypto Tokens</b></p></li>
+                <li><p><b>NFT</b></p></li>
+              </ul>
+            </div>
+
+            <div class="skill-set">
+              <p><span>Tools & Systems</p>
+              <ul>
+                <li><p><b>Unix</b></p></li>
+                <li><p><b>Git</b></p></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div style="grid-area: foot-head">
+            <h4>Awards</h4>
+            <hr />
+          </div>
+          <div style="grid-area: foot-one">
+            <ul>
+              <li class="label-time-set">
+                <p><b>2nd Place on ICT Olympiad of City Level</b><br /> 
+                  (2018, Vinnytsia, Ukraine)</p>
+              </li>
+              <li class="label-time-set">
+                <p><b>1st Place on ICT Olympiad of City Level</b><br /> 
+                  (2019, Vinnytsia, Ukraine)</p>
+              </li>
+              <li class="label-time-set">
+                <p><b>1st Place on ICT Olympiad of Province Level</b><br /> 
+                  (2019, Vinnytsia, Ukraine)</p>
+              </li>
+            </ul>
+          </div>
+          <div style="grid-area: foot-two">
+            <ul>
+              <li class="label-time-set">
+                <p><b>1st Place on ICT Olympiad of City Level</b><br /> 
+                  (2021, Vinnytsia, Ukraine)</p>
+              </li>
+              <li class="label-time-set">
+                <p><b>1st Place on ICT Olympiad of Province Level</b><br /> 
+                  (2021, Vinnytsia, Ukraine)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact-me">
+        <div class="grid-container">
+          <div style="grid-area: head">
+            <h2>Contact Me</h2>
+          </div>
+          <div style="grid-area: a">
+            <p>
+              I’m actively seeking new professional opportunities where I can apply 
+              my skills and contribute to innovative projects. If you're looking
+              for a dedicated and versatile developer to join your team, I’d
+              love to hear from you. Please reach out through the platforms
+              below or contact me directly for any job inquiries.
+            </p>
+          </div>
+          <div id="contact-me-container" style="grid-area: b">
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/linkedin-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption">LinkedIn</h5>
+              </a>
+            </div>
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/github-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption"> GitHub</h5>
+              </a>
+            </div>
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/gamejolt-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption"> GameJolt</h5>
+              </a>
+            </div>
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/itch-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption"> Itch.io</h5>
+              </a>
+            </div>
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/tumbler-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption"> Tumblr</h5>
+              </a>
+            </div>
+            <div class="contact-me-item">
+              <a href="https://dvd-realm.tumblr.com" target="_blank">
+                <img src="assets/images/icons/youtube-icon.png" />
+                <div class="gradient-item"></div>
+                <h5 class="caption"> YouTube</h5>
+              </a>
+            </div>
+          </div>
+          <div style="grid-area: foot">
+            <hr />
+            <p style="float: right;">
+              Kyrylo Denysevych, 09/24/2024
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
     </main>
-    <div id="overlay"></div>
-    <script>
-        document.querySelectorAll('.hoverable').forEach((img) => {
-            img.addEventListener('mouseenter', function() {
-                if (this.closest('section').classList.contains('expanded')) {
-                    let clone = this.cloneNode(true);
-                    clone.style.position = 'fixed';
-                    clone.style.zIndex = '200';
-                    clone.style.top = '50%';
-                    clone.style.left = '50%';
-                    clone.style.transform = 'translate(-50%, -50%)';
-                    clone.style.width = '60%';
-                    clone.id = 'clone'; 
-                    document.body.appendChild(clone);
-                    document.getElementById('overlay').style.display = 'block';
-                }
-            });
-
-            img.addEventListener('mouseleave', function() {
-                let clone = document.getElementById('clone');
-                if (clone) {
-                    document.body.removeChild(clone);
-                    document.getElementById('overlay').style.display = 'none'
-                }
-            });
-        });
-
-        document.querySelectorAll('section').forEach((section) => {
-            const button = section.querySelector('button');
-            button.addEventListener('click', function() {
-                section.querySelectorAll('.hoverable').forEach((img) => {
-                    if (section.classList.contains('expanded')) {
-                        img.style.pointerEvents = 'none';
-                    } else {
-                        img.style.pointerEvents = 'auto';
-                    }
-                });
-            });
-        });
-        document.querySelectorAll('section').forEach((section, index, sections) => {
-            const button = section.querySelector('button');
-            const arrow = button.querySelector('.arrow');
-            button.addEventListener('click', () => {
-                const keyframesClickedExpand = [
-                    { transform: 'translateX(0)', width: '33.33%' },
-                    { transform: 'translateX(0)', width: '100%' }
-                ];
-                const keyframesClickedShrink = [
-                    { transform: 'translateX(0)', width: '100%' },
-                    { transform: 'translateX(0)', width: '33.33%' }
-                ];
-                const keyframesNotClickedShrink = [
-                    { width: '33.33%' },
-                    { width: '0%' }
-                ];
-                const keyframesNotClickedExpand = [
-                    { width: '0%' },
-                    { width: '33.33%' }
-                ];
-                sections.forEach((sectionToAnimate, idx) => {
-                    let keyframes = null;
-                    let options = null;
-                    if (sectionToAnimate === section) {
-                        keyframes = section.classList.contains('expanded') ? keyframesClickedShrink : keyframesClickedExpand;
-                        options = {
-                            duration: 300,
-                            easing: 'ease-in-out',
-                            fill: 'forwards'
-                        };
-                    } else {
-                        keyframes = section.classList.contains('expanded') ? keyframesNotClickedExpand : keyframesNotClickedShrink;
-                        options = {
-                            duration: 300,
-                            easing: 'ease-in-out',
-                            fill: 'forwards'
-                        };
-                    }
-                    const animationEffect = new KeyframeEffect(sectionToAnimate, keyframes, options);
-                    const animation = new Animation(animationEffect, document.timeline);
-                    animation.play();
-                });
-                if (section.classList.contains('expanded')) {
-                    section.classList.remove('expanded');
-                } else {
-                    sections.forEach(sec => sec.classList.remove('expanded'));
-                    section.classList.add('expanded');
-                }
-                section.querySelector('.flex-container').querySelectorAll('.flex-item').forEach((item, idx) => {
-                    if (section.classList.contains('expanded')) {
-                        if (idx !== 0) item.classList.remove('hidden');
-                    } else {
-                        if (idx !== 0) item.classList.add('hidden');
-                    }
-                });
-                if (section.classList.contains('expanded')) {
-
-                    arrow.style.transform = 'scale(-1)';
-                } else {
-                    arrow.style.transform = 'scale(1)';
-                }
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,730 @@
+/* ---------------------- IMPORTS ---------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* --------------------- VARIABLES --------------------- */
+
+:root{
+    --font-scale: 1.333;
+
+    --p: 1rem;
+    --h5: calc(var(--p) * var(--font-scale));
+    --h4: calc(var(--h5) * var(--font-scale));
+    --h3: calc(var(--h4) * var(--font-scale));
+    --h2: calc(var(--h3) * var(--font-scale));
+    --h1: calc(var(--h2) * var(--font-scale));
+    --large: calc(var(--h1) * var(--font-scale));
+    --larger: calc(var(--large) * var(--font-scale));
+    --small: calc(var(--p) / var(--font-scale));
+
+    --margin-lg: 0 12%;
+    --margin-md: 6% 6%;
+    --margin-lg-m: 0 8%;
+    --margin-md-m: 6% 3%;
+    --margin-lg-m-: 0 4%;
+    --margin-md-m-: 6% 1%;
+
+    --border1: 1rem;
+    --border05: 0.5rem;
+}
+:root[data-theme="light"] {
+    --text: #1b1533;
+    --background: #edecf9;
+    --background50: #edecf975;
+    --primary: #28348a;
+    --secondary: #7582e1;
+    --secondary10: #7582e12f;
+    --secondary30: #7582e156;
+    --secondary60: #7582e188;
+    --accent: #002575;
+}
+:root[data-theme="dark"] {
+    --text: #d2ccea;
+    --background: #070613;
+    --background50: #0706137c;
+    --primary: #7580d7;
+    --secondary: #1e2b8a;
+    --secondary10: #1e2b8a3a;
+    --secondary30: #1e2b8a57;
+    --secondary60: #1e2b8a86;
+    --accent: #8aafff;
+}
+
+/* ------------------- GENERAL RULES ------------------- */
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    position: fixed;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+
+    background: linear-gradient( to top,
+        var(--background50) 0%,
+        var(--background) 100%);
+    z-index: 99999;
+
+    height: 10vh;
+    border-bottom: var(--text) solid 1px;
+    box-shadow: 0px 0px 200px var(--secondary30);
+}
+button{
+    border: none;
+    border-radius: 1vh;
+    margin: 4% 2%; 
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+main {
+    margin: var(--margin-lg);
+}
+section {
+    margin: var(--margin-md);
+    margin-top: -7rem;
+    padding-top: 7rem;
+}
+
+h1{font-weight: 700; font-size: var(--h1);}
+h2{font-weight: 600; font-size: var(--h2);}
+h3{font-weight: 500; font-size: var(--h3);}
+h4{font-weight: 400; font-size: var(--h4);}
+h5{font-weight: 300; font-size: var(--h5);}
+p {font-weight: 200; font-size: var(--p);}
+
+hr{border-color: var(--text);}
+
+a:hover {text-decoration: none;}
+
+.primary    {background-color: var(--primary);}
+.primary   *{color: var(--inverted-text);}
+
+.secondary  {background-color: var(--secondary);}
+.secondary *{color: var(--text);}
+
+.accent     {background-color: var(--accent);}
+.accent    *{color: var(--inverted-text);}
+
+span.primary    {color: var(--primary);     background-color: transparent;}
+span.secondary  {color: var(--secondary);   background-color: transparent;}
+span.accent     {color: var(--accent);      background-color: transparent;}
+span.inverted   {color: var(--background);}
+
+/* ------------------- SPECIFIED RULES ------------------- */
+
+.left{float: left;}
+.right{float: right;}
+
+.grid-container div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: justify;
+}
+.grid-container div hr  {
+    margin-top:    3%;
+    margin-bottom: 3%;
+}
+.grid-container div h2  {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: fit-content;
+    background-color: var(--text);
+    color: var(--background);
+    border-bottom: var(--secondary) solid 4px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 25vw;
+
+    object-fit: cover;
+    border-top: var(--secondary) solid 3px;
+}
+
+.section-btn-main{
+    margin-top: 0rem;
+    margin-left: 1.2rem;
+    margin-bottom: 4%;
+    color: var(--text);
+    border: var(--background50) solid 2px;
+    background-color: var(--secondary);
+    box-shadow: 0px 2px 0px var(--secondary60);
+    transition: linear 0.1s;
+}
+.section-btn-main:hover{
+    color: var(--background);
+    background-color: var(--text);
+    transition: linear 0.1s;
+}
+.section-btn-main:active{
+    margin-top: 0.2rem;
+    box-shadow: 0px 0px 0px var(--secondary);
+    transition: linear 0.1s;
+}
+.section-btn-main *{
+    margin: 1.25rem;
+    margin-top: 0.1rem;
+    margin-bottom:  0.1rem;
+    font-weight: 400;
+}
+
+.portfolio-grid-head{
+    grid-area: head; 
+    display: flex; 
+}
+
+.skill-set{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0%;
+
+    border: solid 2px;
+    border-image: linear-gradient(to top, 
+    rgba(0,0,0,0) 0%,
+    var(--secondary10) 5%, 
+    var(--secondary) 100%);
+    border-image-slice: 1;
+}
+.skill-set > p{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+    line-height: 1.35rem;
+
+    text-align: left;
+}
+.skill-set > p > span{
+    font-weight: 700;
+
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+    padding-bottom: 0.1rem;
+
+    color: var(--background);
+    background-color: var(--text);
+    border-bottom: var(--secondary)solid 4px;
+}
+.skill-set li p{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.label-time-set b{
+    border-bottom: var(--secondary)solid 2px;
+}
+
+.contact-me-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: fit-content;
+    min-width: 14.66%;
+    margin: 1%;
+    padding: 1%;
+
+    border: solid 2px;
+    border-image: linear-gradient(to top, 
+    rgba(0,0,0,0) 0%,
+    var(--secondary10) 5%, 
+    var(--secondary) 100%);
+    border-image-slice: 1;
+}
+.contact-me-item .caption{
+    text-align: center;
+    color: var(--text);
+    border-bottom: var(--secondary) solid 2px;
+
+    transition: linear 0.1s;
+}
+.contact-me-item {
+    position: relative;
+}
+.contact-me-item .gradient-item {
+    position: absolute; 
+    top: 0rem;
+    left: 0rem;
+    z-index: 1;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0,0,255,0) 0%,
+        var(--background50) 100%);
+    
+    border-bottom: transparent solid 2px;
+
+    transition: linear 0.1s;
+}
+.contact-me-item img {
+    z-index: 0; 
+    width: 6rem;
+    height: 6rem;    
+    margin-bottom: 1rem;
+
+    transition: linear 0.1s;
+}
+.contact-me-item:hover .gradient-item {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top, 
+        rgba(0,0,255,0) 0%,
+        var(--secondary10) 100%);
+    
+    border-bottom: var(--secondary10) solid 2px;
+
+    transition: linear 0.1s;
+}
+.contact-me-item:hover img{
+    width: 6.2rem;
+    height: 6.2rem;
+
+    transition: linear 0.1s;
+}
+.contact-me-item:hover .caption{
+    color: var(--text);
+    font-weight: 500;
+
+    transition: linear 0.1s;
+}
+
+/* ------------------- UNIQUE RULES ------------------- */
+
+#logo{
+    display: flex;
+    align-items: center;
+    padding: var( --margin-md);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1.5rem;
+
+    transition: 0.1s linear;
+}
+#logo-container{
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+#logo-icon{
+    background-color: var(--text);
+    background-clip: content-box;
+    color: var(--background);
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+    border-left: var(--text) solid 2px;
+    font-weight: 500;
+    font-size: var(--h3);
+    line-height: 0.9;
+
+    -webkit-transform:  scale(1.25,1); 
+    -moz-transform:     scale(1.25,1); 
+    -ms-transform:      scale(1.25,1);
+    -o-transform:       scale(1.25,1);
+    transform:          scale(1.25,1);
+
+    transition: 0.1s linear;
+}
+#logo-text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 6px;
+
+    font-weight: 200;
+    font-size: var(--h5);
+    line-height: 1.5;
+    border-right: var(--secondary) solid 2px;
+}
+
+#navbar{
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+}
+#navbar *{
+    text-wrap: nowrap;
+    font-style: italic;
+    text-shadow: 0px 4px 0px var(--secondary), 0px 8px 0px var(--secondary30);
+}
+#navbar .navbar-li-sign{
+    font-style: normal;
+}
+#navbar button{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0;
+    margin: 0 0;
+
+    background-color: transparent;
+    color: var(--text);
+
+    border-left: solid 1px; 
+    border-image: -moz-linear-gradient(to top, var(--text) 0%, var(--secondary) 50%, rgba(0,0,0,0) 100%);
+    border-image: -webkit-linear-gradient(to top, var(--text) 0%, var(--secondary) 50%, rgba(0,0,0,0) 100%);
+    border-image: linear-gradient(to top, var(--text) 0%, var(--secondary) 50%, rgba(0,0,0,0) 100%);
+    border-image-slice: 1;
+
+    transition: 0.1s linear;
+}
+#navbar button:hover{
+    background-color: var(--text); 
+    
+    transition: 0.1s linear;
+}
+#navbar button:hover *{
+    color: var(--background); 
+    text-shadow: 0px 0px; 
+}
+
+#hero{
+    margin: 0%;
+    height: 90vh;
+}
+#hero .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 99.9%;
+    z-index: 2;
+}
+#hero .right{
+    margin-top: 20vh;
+    height: 100%;
+    width: 0.01%;
+    z-index: 1;
+    perspective: 140px;
+}
+#hero-title{
+    z-index: 1;
+    font-size: var(--large);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    text-shadow: 0px 4px 0px var(--secondary);
+}
+#hero-title span#firstname {
+    background-color: var(--text);
+    color: var(--background);
+    
+    margin-left: -17rem;
+    padding-left: 17rem;
+    box-shadow: 0px 4px 0px var(--secondary);
+    text-shadow: 0px 0px;
+}
+#hero-figure-primary{
+    z-index: 1;
+    float:right;
+
+    position: absolute;
+    right: 1.5vw;
+
+    width: 40vh;
+    height: 40vh;
+    background-color: transparent;
+    background-position: 24px 24px;
+    background-size: 25px 25px;
+    background-image:  radial-gradient(
+        var(--text) 14%, 
+        transparent 18.2%
+    );
+
+    transform: rotateY(-10deg)  rotateX(5deg) ;
+}
+#hero-figure-secondary{
+    z-index: 0;
+    float:right;
+    
+    position: absolute;
+    right: 0vw;
+    top: 1.5vw;
+
+    border: var(--secondary) 1px inset;
+
+    width: 40vh;
+    height: 40vh;
+    background-color: transparent;
+    background-image:  repeating-linear-gradient(
+        -45deg,
+        var(--secondary) 1px,
+        transparent 1.75px,
+        transparent 20px
+      );
+
+    transform: rotateY(-10deg)  rotateX(5deg) ;
+}
+#hero-sub-title{
+    font-weight: 300;
+    font-style: italic;
+    margin: 0rem;
+}
+
+#about-me .grid-container{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    "head head head"
+    "a b c"
+    "foot foot foot";
+    width: 100%;
+}
+#portfolio .grid-container{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas:
+    "head"
+    "a"
+    "foot";
+    width: 100%;
+}
+#portfolio .grid-container .grid-container{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "head head"
+    "a a"
+    "b c"
+    "d d";
+    width: 100%;
+    margin-top: 2%;
+}
+#portfolio .grid-container .grid-container div{
+    margin-right: 3rem;
+    margin-bottom: 0.25rem;
+}
+#resume .grid-container{
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "head head head head head head"
+    "a a a a b b"
+    "c-head c-head c-head c-head c-head c-head"
+    "c-one c-one  c-two c-two c-three c-three"
+    "foot-head foot-head foot-head foot-head foot-head foot-head"
+    "foot-one foot-one foot-one foot-two foot-two foot-two";
+    width: 100%;
+}
+#contact-me .grid-container{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas:
+    "head"
+    "a"
+    "b"
+    "foot";
+    width: 100%;
+}
+
+#portfolio-carousel{
+    padding: 0%;
+    height: fit-content;
+}
+#portfolio-carousel *{
+    padding: 0%;
+}
+#portfolio-carousel .carousel-indicators{
+    border-top: var(--secondary) solid 3px;
+    margin: 0;
+    bottom: -2rem;
+}
+#portfolio-carousel .carousel-indicators li{
+    background-color: var(--primary);
+}
+#portfolio-carousel .carousel-indicators li.active{
+    background-color: var(--text);
+
+}
+#portfolio-carousel .carousel-inner{
+    margin: 0%;
+}
+#portfolio-carousel .carousel-item{
+    padding: 0%;
+    width: 100%;
+}
+#portfolio-carousel .carousel-control-prev{
+    background: linear-gradient(to right, 
+    var(--background) 0%,
+    rgba(0,0,0, 0.1) 80%, 
+    rgba(0,0,0,0) 100%);
+    opacity: 0.8;
+
+    height: 25vw;
+}
+#portfolio-carousel .carousel-control-next{
+    background: linear-gradient(to left, 
+    var(--background) 0%,
+    rgba(0,0,0, 0.1) 80%, 
+    rgba(0,0,0,0) 100%);
+    opacity: 0.8;
+
+    height: 25vw;
+}
+
+#contact-me-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ------------------ MEDIA QUERIES ------------------- */
+
+@media (max-width: 1120px) {
+    main {
+        margin: var(--margin-lg-m);
+    }
+    section {
+        margin: var(--margin-md-m);
+        margin-top: -7.0rem;
+        padding-top: 7.0rem;
+    }
+
+    .carousel-item img{
+        height: 40vw;
+    }
+
+    #about-me .grid-container{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4, auto);
+        grid-template-areas:
+        "head head"
+        "a a"
+        "b c"
+        "foot foot";
+        width: 100%;
+    }
+    #portfolio .grid-container .grid-container{
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas:
+        "head"
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+    #portfolio .grid-container .grid-container .portfolio-grid-head{
+        text-align: left;
+    }
+    #resume .grid-container{
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "head"
+        "a"
+        "b"
+        "c-head"
+        "c-one"
+        "c-two"
+        "c-three"
+        "foot-head"
+        "foot-one"
+        "foot-two";
+    }
+
+    #portfolio .grid-container .grid-container div {
+        margin-right: 1.5rem;
+    }
+    #portfolio-carousel .carousel-control-prev{
+        height: 40vw;
+    }
+    #portfolio-carousel .carousel-control-next{
+        height: 40vw;
+    }
+    #portfolio-carousel .carousel-indicators li{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 680px) {
+    header {
+        height:fit-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    main {
+        margin: var(--margin-lg-m-);
+    }
+    section {
+        margin: var(--margin-md-m-);
+        margin-top: -11.25rem;
+        padding-top: 11.25rem;
+    }
+
+    .carousel-item img {
+        height: 50vw;
+    }
+
+    #logo {
+        justify-content: center;
+    }
+
+    #hero .right{
+        margin-top: 10vh;
+    }
+
+    #about-me .grid-container {
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(6, auto);
+        grid-template-areas:
+        "head"
+        "a"
+        "b"
+        "c"
+        "foot";
+        width: 100%;
+    }
+
+    #portfolio .grid-container .grid-container div {
+        margin-right: 0rem;
+    }
+    #portfolio-carousel .carousel-control-prev{
+        height: 50vw;
+    }
+    #portfolio-carousel .carousel-control-next{
+        height: 50vw;
+    }
+    #portfolio-carousel .carousel-indicators li{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #navbar button p{
+        transform: scaleX(0.85);
+    }
+    #navbar button{
+        padding: 0rem;
+    }
+}
