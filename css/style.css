@@ -667,10 +667,17 @@ span.inverted   {color: var(--background);}
 }
 
 @media (max-width: 680px) {
+    h1{font-size: var(--h2);}
+    h2{font-size: var(--h3);}
+    h3{font-size: var(--h4);}
+    h4{font-size: var(--h5);}
+    #hero-title{
+        font-size: var(--h2);
+    }
     header {
-        height:fit-content;
+        height: fit-content;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     main {
         margin: var(--margin-lg-m-);
@@ -680,13 +687,16 @@ span.inverted   {color: var(--background);}
         margin-top: -11.25rem;
         padding-top: 11.25rem;
     }
+    #navbar button{
+        height: 10vh;
+    }
 
     .carousel-item img {
         height: 50vw;
     }
 
     #logo {
-        justify-content: center;
+        display: none;
     }
 
     #hero .right{
