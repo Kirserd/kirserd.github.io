@@ -737,3 +737,66 @@ span.inverted   {color: var(--background);}
         padding: 0rem;
     }
 }
+
+@media only screen and (orientation: portrait){
+    h1{font-size: var(--h2);}
+    h2{font-size: var(--h3);}
+    h3{font-size: var(--h4);}
+    h4{font-size: var(--h5);}
+    #hero-title{
+        font-size: var(--h2);
+    }
+    header {
+        height: fit-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+    main {
+        margin: var(--margin-lg-m-);
+    }
+    section {
+        margin: var(--margin-md-m-);
+        margin-top: -11.25rem;
+        padding-top: 11.25rem;
+    }
+    #navbar button{
+        height: 10vh;
+    }
+
+    .carousel-item img {
+        height: 50vw;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #hero .right{
+        margin-top: 10vh;
+    }
+
+    #about-me .grid-container {
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(6, auto);
+        grid-template-areas:
+        "head"
+        "a"
+        "b"
+        "c"
+        "foot";
+        width: 100%;
+    }
+
+    #portfolio .grid-container .grid-container div {
+        margin-right: 0rem;
+    }
+    #portfolio-carousel .carousel-control-prev{
+        height: 50vw;
+    }
+    #portfolio-carousel .carousel-control-next{
+        height: 50vw;
+    }
+    #portfolio-carousel .carousel-indicators li{
+        margin-bottom: 2rem;
+    }
+  }
