@@ -528,9 +528,9 @@ span.inverted   {color: var(--background);}
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "head head head head head head"
-    "a a a a b b"
     "c-head c-head c-head c-head c-head c-head"
     "c-one c-one  c-two c-two c-three c-three"
+    "a a a a a a"
     "foot-head foot-head foot-head foot-head foot-head foot-head"
     "foot-one foot-one foot-one foot-two foot-two foot-two";
     width: 100%;
@@ -643,7 +643,6 @@ span.inverted   {color: var(--background);}
         grid-template-areas:
         "head"
         "a"
-        "b"
         "c-head"
         "c-one"
         "c-two"
