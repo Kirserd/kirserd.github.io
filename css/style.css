@@ -675,7 +675,7 @@ span.inverted   {color: var(--background);}
         font-size: var(--h2);
     }
     header {
-        height: fit-content;
+        height: 8vh;
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
     }
@@ -747,7 +747,7 @@ span.inverted   {color: var(--background);}
         font-size: var(--h2);
     }
     header {
-        height: fit-content;
+        height: 8vh;
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
     }
